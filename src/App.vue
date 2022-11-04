@@ -1,15 +1,18 @@
 <template>
   <the-header title="Soundboard App"></the-header>
   <the-dashboard></the-dashboard>
+  <router-view></router-view>
 </template>
 
 <script>
 import TheHeader from './components/layouts/TheHeader.vue';
+//import CardDashboard from './components/dashboard-components/CardDashboard.vue';
 import TheDashboard from './components/dashboard-components/TheDashboard.vue';
 export default {
   components: {
     TheHeader,
     TheDashboard,
+    //CardDashboard,
   },
   data() {
     return {};
