@@ -12,7 +12,8 @@
     "howler": "^2.2.3",
     "pinia": "^2.0.23",
     "vue": "^3.2.13",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue3-dropzone": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
