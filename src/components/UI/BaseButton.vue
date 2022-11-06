@@ -1,19 +1,11 @@
 <template>
   <button v-if="!link" :class="mode"><slot></slot></button>
-  <router-link v-else to="/manage" :class="mode"><slot></slot></router-link>
+  <router-link v-else :to="to" :class="mode"><slot></slot></router-link>
 </template>
 
 <script>
 export default {
-  props: ['mode', 'link', 'to'],
-
-  computed: {
-    test() {
-      console.log(this.to);
-      return this.to;
-    },
-  },
-  /*  props: {
+  props: {
     mode: {
       type: String,
       required: false,
@@ -29,7 +21,9 @@ export default {
       required: false,
       default: '/',
     },
-  }, */
+  },
+
+  computed: {},
 };
 </script>
 
